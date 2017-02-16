@@ -1,0 +1,31 @@
+.top-bar .top-bar-title img {
+  max-width: 250px;
+}
+.top-bar .top-bar-left a {
+  color: #e428b1;
+}
+.top-bar .dropdown.menu li a.with-submenu:after {
+  border-color: #e428b1 transparent transparent
+}
+.button {
+  background-color: #e428b1;
+}
+.button:hover,
+.button:focus {
+  background-color: #c50b93;
+}
+.orange {
+  color: #e428b1;
+}
+a:hover, a:focus {
+  color: #c50b93;
+}
+footer .icon svg path {
+  fill: #e428b1;
+}
+footer .icon svg ellipse, footer .icon svg circle {
+  stroke: #e428b1;
+}
+footer a.color:hover svg path {
+    stroke: #e428b1;
+}
