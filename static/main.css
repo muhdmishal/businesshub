@@ -29,3 +29,6 @@ footer .icon svg ellipse, footer .icon svg circle {
 footer a.color:hover svg path {
     stroke: #e428b1;
 }
+#dropdown-who .tile:hover h4 {
+    color: #e428b1;
+}
