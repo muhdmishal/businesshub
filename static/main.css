@@ -12,14 +12,16 @@
   border-color: #e428b1 transparent transparent;
 }
 .button {
-  background-color: #e428b1;
+  background-color: rgba(0,0,0,.9);
+  color: white;
 }
 .wrapper.primary {
   background-color: white;
 }
 .button:hover,
 .button:focus {
-  background-color: #c50b93;
+  background-color: rgba(0,0,0,1);
+  color: white;
 }
 .orange {
   color: #e428b1;
