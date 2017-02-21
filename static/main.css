@@ -42,12 +42,11 @@ footer a.color:hover svg path {
 }
 .banner-header {
   color: #e428b1;
-  text-shadow: 1px 1px 5px #000000;
+  font-size: 5.5em;
   font-family: "Bebas-Neue";
 }
 .banner-header-one {
-  color: white;
-  text-shadow: 1px 1px #000000;
+  color: black;
   font-family: "Bebas-Neue";
 }
 .lead {
