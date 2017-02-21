@@ -9,10 +9,13 @@
   color: #e428b1;
 }
 .top-bar .dropdown.menu li a.with-submenu:after {
-  border-color: #e428b1 transparent transparent
+  border-color: #e428b1 transparent transparent;
 }
 .button {
   background-color: #e428b1;
+}
+.wrapper.primary {
+  background-color: white;
 }
 .button:hover,
 .button:focus {
