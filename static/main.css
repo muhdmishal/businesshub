@@ -36,3 +36,10 @@ footer a.color:hover svg path {
   background: #ffffff;
   box-shadow: 0 3px rgba(190, 190, 190, 0.3);
 }
+.banner-header {
+  color: #e428b1;
+  text-shadow: 1px 1px 5px #000000;
+}
+.lead {
+  color: black;
+}
