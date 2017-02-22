@@ -472,7 +472,6 @@
                     $.post("contact.php",
                         form_data,
                         function(data, status){
-                            alert("Data: " + data + "\nStatus: " + status);
                             $('#book_a_tour_header .feedback').slideDown('fast');
                             $('#book_a_tour_header .form').slideUp('fast');
                         });
