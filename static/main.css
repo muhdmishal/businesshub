@@ -57,3 +57,6 @@ footer a.color:hover svg path {
 .lead {
   color: black;
 }
+.plans .plan .inside-box {
+  margin-top: 0;
+}
