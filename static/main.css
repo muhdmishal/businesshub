@@ -41,6 +41,10 @@ footer a.color:hover svg path {
 #dropdown-who .tile:hover h4 {
   color: #e428b1;
 }
+.top-bar {
+  background: #ffffff;
+  box-shadow: 0 3px rgba(190, 190, 190, 0.3);
+}
 .top-bar.color {
   background: #ffffff;
   box-shadow: 0 3px rgba(190, 190, 190, 0.3);

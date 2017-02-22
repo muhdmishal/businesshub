@@ -49,7 +49,7 @@
 
     <body class="drawer drawer--left home">
 
-<div class="top-bar ">
+<div class="top-bar color">
     <div class="top-bar-title">
       <a href=""><img src="static/images/logo.png" /></a>
     </div>
@@ -103,17 +103,17 @@
 
 <div class="form small-12 columns large-8 large-offset-2">
 
-    <p>We'd love to show you around &ndash; </br>let's make a time.</p>
+    <p>Please leave us your details</br>and we'll be in touch as soon as we can</p>
 
 
 
 
     <input class='first-name small-6 columns' type="text" placeholder="First name">
 
-    <input class='first-name small-6 columns' type="text" placeholder="Business name">
+    <input class='business-name small-6 columns' type="text" placeholder="Business name">
 
 
-    <input class='last-name small-6 columns' type="text" placeholder="Telephone number">
+    <input class='telephone-number small-6 columns' type="text" placeholder="Telephone number">
 
   <input class='email ' type="email" placeholder="Email">
 
@@ -136,7 +136,7 @@
 <div class="feedback large-8 large-offset-2 small-12">
     <h5>YOUR TOUR’S ALMOST SCHEDULED.</h5>
     <p>Keep an eye on your inbox in the next few minutes (and Spam, just in case).</p>
-    <p>Call us with your questions any time on +44 (0)20 3829 9521.</p>
+    <p>Call us with your questions any time on 0203 000 000.</p>
 </div>
 
 
@@ -168,7 +168,7 @@
 
 <div class="form small-12 columns large-8 large-offset-2">
 
-    <p>We'd love to show you around &ndash; </br>let's make a time.</p>
+    <p>Please leave us your details</br>and we'll be in touch as soon as we can</p>
 
 
 
@@ -235,7 +235,7 @@
 <div class="feedback large-8 large-offset-2 small-12">
     <h5>YOUR TOUR’S ALMOST SCHEDULED.</h5>
     <p>Keep an eye on your inbox in the next few minutes (and Spam, just in case).</p>
-    <p>Call us with your questions any time on +44 (0)20 3829 9521.</p>
+    <p>Call us with your questions any time on 0203 000 000.</p>
 </div>
 
 
@@ -439,8 +439,12 @@
                     $('#book_a_tour_header .first-name').removeClass("is-invalid-input");
                 });
 
-                $('#book_a_tour_header .last-name').change(function() {
-                    $('#book_a_tour_header .last-name').removeClass("is-invalid-input");
+                $('#book_a_tour_header .business-name').change(function() {
+                    $('#book_a_tour_header .business-name').removeClass("is-invalid-input");
+                });
+
+                $('#book_a_tour_header .telephone-number').change(function() {
+                    $('#book_a_tour_header .telephone-number').removeClass("is-invalid-input");
                 });
 
                 $('#book_a_tour_header .email').change(function() {
@@ -456,26 +460,22 @@
 
                         'page': window.location.href,
 
-
-                        'location' : $('#book_a_tour_header .locations').val(),
-
-
-
-
-
                         'first-name' : $('#book_a_tour_header .first-name').val(),
 
-                        'last-name' : $('#book_a_tour_header .last-name').val(),
+                        'business-name' : $('#book_a_tour_header .business-name').val(),
+
+                        'telephone-number' : $('#book_a_tour_header .telephone-number').val(),
 
                         'email' : $('#book_a_tour_header .email').val()
 
                     };
 
-                    dataLayer.push({
-                        'event': 'form_submit',
-                    });
 
-                    console.log(form_data)
+                    //dataLayer.push({
+                    //    'event': 'form_submit',
+                    //});
+
+                    //console.log(form_data)
 
                     $('#book_a_tour_header .feedback').slideDown('fast');
                     $('#book_a_tour_header .form').slideUp('fast');
@@ -492,8 +492,13 @@
                         val_passed = false;
                     }
 
-                    if($('#book_a_tour_header .last-name').val() == "") {
-                        $('#book_a_tour_header .last-name').addClass("is-invalid-input");
+                    if($('#book_a_tour_header .business-name').val() == "") {
+                        $('#book_a_tour_header .business-name').addClass("is-invalid-input");
+                        val_passed = false;
+                    }
+
+                    if($('#book_a_tour_header .telephone-number').val() == "") {
+                        $('#book_a_tour_header .telephone-number').addClass("is-invalid-input");
                         val_passed = false;
                     }
 
